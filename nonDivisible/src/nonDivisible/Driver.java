@@ -25,18 +25,8 @@ public class Driver {
 			e.printStackTrace();
 		}
 	}
-
+	
 	private static int test(int[] set, int k) {
-		int nMax= 0;
-		for(int i = 0; i < set.length; i++) {
-			if (testRec(set, k, i, 0))
-				nMax++;
-		}
-		return nMax;
+		return 0;
 	}
-
-	private static boolean testRec(int[] set, int k, int i, int j) {
-		return false;
-	}
-
 }
