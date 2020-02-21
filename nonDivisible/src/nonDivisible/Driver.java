@@ -20,13 +20,23 @@ public class Driver {
 			int k = Integer.parseInt(reader.readLine().split(" ")[1]);
 			int[] set = Stream.of(reader.readLine().split(" ")).mapToInt(e -> Integer.parseInt(e)).toArray(); 
 			result = test(set, k);
+			System.out.println(result);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
 	private static int test(int[] set, int k) {
-
-		return 0;
+		int nMax= 0;
+		for(int i = 0; i < set.length; i++) {
+			if (testRec(set, k, i, 0))
+				nMax++;
+		}
+		return nMax;
 	}
+
+	private static boolean testRec(int[] set, int k, int i, int j) {
+		return false;
+	}
+
 }
